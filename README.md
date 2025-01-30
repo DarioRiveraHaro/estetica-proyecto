@@ -10,7 +10,7 @@ Este es un proyecto escolar para gestionar visitas y fidelizar clientes en una e
 
 ## Tecnologías utilizadas
 
-- **Frontend**: HTML, CSS, JavaScript, Instascan.
+- **Frontend**: HTML, CSS, JavaScript, jsQR.
 - **Backend**: Node.js, Express, SQLite.
 
 ## Cómo ejecutar el proyecto
