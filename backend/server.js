@@ -1,8 +1,16 @@
 const express = require('express');
 const sqlite3 = require('sqlite3').verbose();
+const cors = require('cors'); // Importar el middleware cors
 const path = require('path');
 const app = express();
 const port = 3000;
+
+// Configurar CORS para permitir solicitudes desde http://127.0.0.1:5500
+app.use(cors({
+  origin: 'http://127.0.0.1:5500', // Permitir solo este origen
+  methods: ['GET', 'POST'], // Métodos permitidos
+  credentials: true, // Permitir credenciales (si las usas)
+}));
 
 app.use(express.json());
 app.use(express.static(path.join(__dirname, '../frontend')));
